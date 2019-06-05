@@ -1,0 +1,20 @@
+logmein-server:
+  image: egouletlang/logmein-assignment
+  ports:
+    - "8080:8080"
+  links:
+    - mongo
+  
+mongo:
+  image: mongo:3.0.2
+  ports:
+    - 27017:27017
+
+mongo-client:
+  image: mongoclient/mongoclient
+  ports:
+    - 3030:3000
+  environment:
+    - MONGOCLIENT_DEFAULT_CONNECTION_URL=mongodb://mongo:27017
+  links:
+    - mongo

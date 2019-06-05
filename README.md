@@ -1,5 +1,5 @@
 # LogMeIn Assignment
-This project leverages docker, java, and mongo to create a Card Game API.
+This project leverages docker, java, and mongo to create a Card Game API. :spades::hearts::clubs::diamonds:
 
 ## Background
 
@@ -111,22 +111,25 @@ From the root of the directory, run the following command:
 	
 	* Containers
 
-		docker container ls -a
-		docker container stop <container_id>
-		docker container rm <container_id>
+			docker container ls -a
+
+			docker container stop <container_id>
+
+			docker container rm <container_id>
 	
 	* Images
 
-		docker images
-		docker image rm <image_id>
+			docker images
+
+			docker image rm <image_id>
 
 	* Remove dangling images and containers
 
-		docker system prune
+			docker system prune
 
 	* Remove everything
 
-		docker system prune -a
+			docker system prune -a
 
 
 ### Docker Compose
@@ -134,3 +137,6 @@ From the root of the directory, run the following command:
 * Docker Compose helps clean up the containers and volumes it creates
 
 		docker-compose down
+
+
+:smile::whale:
